@@ -1,3 +1,4 @@
+import './app/styles/main.css'
 import React from 'react'
 import Header from './app/components/org.Header'
 
