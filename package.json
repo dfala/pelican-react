@@ -1,13 +1,13 @@
 {
   "name": "y",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pelican Blog",
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-dev-server --content-base public/",
     "debug": "NODE_ENV=debug webpack-dev-server --content-base public/"
   },
-  "author": "Mikey Murphy <mikeyamadeo@gmail.com> (https://twitter.com/TranscendMikey)",
+  "author": "Daniel Falabella",
   "license": "ISC",
   "dependencies": {
     "axios": "0.5.4",
