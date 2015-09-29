@@ -1,9 +1,11 @@
 import React from 'react'
+import Header from './app/components/org.Header'
 
 const App = React.createClass({
   render() {
     return (
         <div>
+          <Header />
           Hello world
         </div>
     );
