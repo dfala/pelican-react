@@ -43,6 +43,10 @@ body {
 	margin-top: 60px;
 }
 
+.list {
+	margin-top: 40px;
+}
+
 h2 {
 	font-size: 25px;
 	display: inline-block;
@@ -116,26 +120,8 @@ li:hover {
 	background-color: #F4F4F4;
 }
 
-.post-description {
-	display: block;
-	max-height: 4.25rem;
-  	overflow: hidden;
-  	color: #989898;
-  	font-size: 14px;
-}
-
 .read-br {
 	white-space: pre-wrap;
-}
-
-.post-title {
-	margin-bottom: 5px;
-	font-weight: bold;
-	padding-right: 25px;
-	font-size: 18px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
 }
 
 .page-header {
@@ -150,12 +136,6 @@ li:hover {
 .navbar-brand {
 	cursor: pointer;
   background-color: red;
-}
-
-.light-border {
-	border-radius: 2px;
-	border: 1px solid #eee;
-	margin-bottom: 10px;
 }
 
 .btn-sm {
