@@ -9,3 +9,4 @@ To get debug panel
 
 ### About
 The Pelican Blog rebuilt on React
+Rebuilding the following repo: https://github.com/dfala/pelican
