@@ -32,7 +32,6 @@ module.exports = getConfig({
               '<meta name="viewport" content="width=device-width, initial-scale=1">',
               '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">',
               '<link href="http://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css">',
-              '<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">',
             '</head>',
             '<body>',
               '<div id="app"></div>',
@@ -44,7 +43,7 @@ module.exports = getConfig({
     },
     prod: function (data) {
       var config = {
-        title: 'React Workshop',
+        title: 'The Pelican Blog',
         favicon: '/assets/icons/favicon.ico',
         gaId: '',
         errorceptionId: ''
@@ -58,7 +57,6 @@ module.exports = getConfig({
               '<meta name="viewport" content="width=device-width, initial-scale=1">',
               '<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">',
               '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">',
-              '<link href="http://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css">',
               '<title>' + config.title + '</title>',
               '<link rel="icon" href="' + config.favicon + '" type="image/x-icon" />',
               '<link href="/' + data.css + '" rel="stylesheet" type="text/css" />',

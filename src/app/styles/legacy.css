@@ -31,6 +31,10 @@ body {
 	height: 100%;
 }
 
+.top-wrapper {
+	padding-top: 50px;
+}
+
 .main-body {
 	margin-bottom: 150px;
 }
@@ -42,17 +46,6 @@ body {
 h2 {
 	font-size: 25px;
 	display: inline-block;
-}
-
-button,
-.btn,
-.btn-primary {
-	cursor: pointer;
-	outline: none;
-	border: none;
-	-webkit-box-shadow: none !important;
-	-moz-box-shadow: none !important;
-	box-shadow: none !important;
 }
 
 #close-search {
@@ -163,45 +156,6 @@ li:hover {
 	border-radius: 2px;
 	border: 1px solid #eee;
 	margin-bottom: 10px;
-}
-
-.jumbotron{
-	background-size: cover;
-	margin: 0;
-}
-
-.pelican-banner {
-	/*background-image: url(images/clouds.jpg);*/
-	background-color: #DBDEF4;
-}
-
-
-.btn-primary {
-	background: #0093FF;
-	border-color: #0093FF;
-	border-radius: 2px;
-}
-
-
-.btn-primary:hover {
-	background: black;
-	border-color: black;
-}
-
-.btn-primary:focus {
-/*	background: #0093FF;*/
-	background-color: black;
-	border-color: #0093FF;
-	outline: none;
-	border: none !important;
-	-webkit-box-shadow: none !important;
-	-moz-box-shadow: none !important;
-	box-shadow: none !important;
-}
-
-.btn-primary.active {
-	background-color: black;
-	border-color: #0093FF;
 }
 
 .btn-sm {
