@@ -1,20 +1,26 @@
 import style from './style.css'
 import CSSModules from 'react-css-modules'
-import React from 'react'
+import React, { PropTypes } from 'react'
 
 const Post = React.createClass({
+  propTypes: {
+    title: PropTypes.string,
+    link: PropTypes.string,
+    description: PropTypes.string
+  },
   render() {
+    const { title, link, description } = this.props.data
     return (
       <li styleName="light-border">
         <p styleName="post-title">
-          Introductory course to React
+          {title}
         </p>
 
-        <a href="https://www.udemy.com/learn-and-understand-reactjs/learn/" target="_blank">
-          https://www.udemy.com/learn-and-understand-reactjs/learn/
+        <a href={link} target="_blank">
+          {link}
         </a>
 
-        <p styleName="post-description">This is the description of this post</p>
+        <p styleName="post-description">{description}</p>
       </li>
     )
   }

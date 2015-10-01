@@ -2,6 +2,8 @@
 	border-radius: 2px;
 	border: 1px solid #eee;
 	margin-bottom: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .post-title {
@@ -17,8 +19,12 @@
 .post-description {
 	display: block;
 	max-height: 4.25rem;
-  	overflow: hidden;
-  	color: #989898;
-  	font-size: 14px;
-    margin-top: 3px;
+	overflow: hidden;
+	color: #989898;
+	font-size: 14px;
+  margin-top: 3px;
+}
+
+a {
+  white-space: nowrap;
 }
