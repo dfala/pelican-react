@@ -5,11 +5,13 @@ import React from 'react'
 import Header from './components/org.Header'
 import Banner from './components/org.Banner'
 import Post from './components/org.Post'
+import ModalPost from './components/org.ModalPost'
 
 const TopWrapper = React.createClass({
   getInitialState() {
     return {
-      posts: []
+      posts: [],
+      modalInfo: null
     }
   },
   componentWillMount() {
@@ -36,15 +38,34 @@ const TopWrapper = React.createClass({
             </div>
           </div>
         </div>
+        {this.renderModal()}
       </div>
     )
   },
   renderPost() {
     if (this.state.posts.length > 0) {
-      return this.state.posts.splice(0, 20).map(item => <Post data={item} key={item.postId} />)
+      return this.state.posts.map(item => <Post data={item} key={item.postId} openModal={this.openModal} />)
     } else {
       return null
     }
+  },
+  renderModal() {
+    if (this.state.modalInfo) {
+      let { title, link, description } = this.state.modalInfo
+      return <ModalPost {...{title, link, description} } closeModal={this.closeModal} />
+    } else {
+        return null
+    }
+  },
+  openModal(item) {
+    this.setState({
+      modalInfo: item
+    })
+  },
+  closeModal() {
+    this.setState({
+      modalInfo: null
+    })
   }
 })
 

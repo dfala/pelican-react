@@ -6,12 +6,14 @@ const Post = React.createClass({
   propTypes: {
     title: PropTypes.string,
     link: PropTypes.string,
-    description: PropTypes.string
+    description: PropTypes.string,
+    openModal: PropTypes.func
   },
   render() {
     const { title, link, description } = this.props.data
+    const { openModal } = this.props
     return (
-      <li styleName="light-border">
+      <li styleName="light-border" onClick={() => openModal(this.props.data)}>
         <p styleName="post-title">
           {title}
         </p>

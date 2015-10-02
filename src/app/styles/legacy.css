@@ -106,6 +106,7 @@ li {
 a {
 	color: #0093FF;
 	text-decoration: none !important;
+	cursor: pointer;
 }
 
 a:hover {
