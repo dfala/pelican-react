@@ -2,6 +2,7 @@ import style from './style.css'
 import CSSModules from 'react-css-modules'
 import React, { PropTypes } from 'react'
 
+
 const Post = React.createClass({
   propTypes: {
     title: PropTypes.string,

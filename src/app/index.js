@@ -1,11 +1,13 @@
 import style from './styles/main.css'
 import CSSModules from 'react-css-modules'
 import React from 'react'
+import * as router from 'lucid-router'
 
 import Header from './components/org.Header'
 import Banner from './components/org.Banner'
 import Post from './components/org.Post'
 import ModalPost from './components/org.ModalPost'
+import NotFound from './views/not.found'
 
 const TopWrapper = React.createClass({
   getInitialState() {
@@ -25,6 +27,8 @@ const TopWrapper = React.createClass({
     }.bind(this))
   },
   render() {
+    const { location } = this.props
+    console.log(location, 'location')
     return (
       <div styleName="top-wrapper">
         <Header />
@@ -58,6 +62,9 @@ const TopWrapper = React.createClass({
     }
   },
   openModal(item) {
+    var uri = '/post/' + item.postId;
+    router.navigate(uri)
+
     this.setState({
       modalInfo: item
     })

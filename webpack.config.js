@@ -80,7 +80,8 @@ module.exports = getConfig({
    */
   vendors: [
     'react',
-    'react-router',
+    'lucid-router',
+    // 'react-router',
     'leaflet',
     'leaflet.markercluster',
     'axios'
