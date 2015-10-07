@@ -10,11 +10,8 @@ var getConfig = require('ac-webpack')
 module.exports = getConfig({
 
   in: appPath, /* [1] */
-
   out: buildPath, /* [1] */
-
   stylePath: stylePath,
-
   cssModules: true,
 
   /**

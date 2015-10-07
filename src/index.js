@@ -10,7 +10,6 @@ router.addRoutes([
 // router.register(location => console.log(location.state))
 
 //router.register(location => render(location))
-
 render(router.getLocation())
 
 function render(location) {
