@@ -33,6 +33,16 @@ const TopWrapper = React.createClass({
       <div styleName="top-wrapper">
         <Header />
         <Banner />
+        {this.renderPage()}
+        {this.renderModal()}
+      </div>
+    )
+  },
+  renderPage() {
+    if (location.name === 'lists') {
+      return <Lists />
+    } else {
+      return (
         <div className="container" styleName="main-body">
           <div className="col-xs-6">
             <div styleName="list">
@@ -42,15 +52,7 @@ const TopWrapper = React.createClass({
             </div>
           </div>
         </div>
-        {this.renderModal()}
-      </div>
-    )
-  },
-  renderPost() {
-    if (this.state.posts.length > 0) {
-      return this.state.posts.map(item => <Post data={item} key={item.postId} openModal={this.openModal} />)
-    } else {
-      return null
+      )
     }
   },
   renderModal() {
@@ -59,6 +61,13 @@ const TopWrapper = React.createClass({
       return <ModalPost {...{title, link, description} } closeModal={this.closeModal} />
     } else {
         return null
+    }
+  },
+  renderPost() {
+    if (this.state.posts.length > 0) {
+      return this.state.posts.map(item => <Post data={item} key={item.postId} openModal={this.openModal} />)
+    } else {
+      return null
     }
   },
   openModal(item) {

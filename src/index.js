@@ -3,13 +3,14 @@ import App from './app'
 import * as router from 'lucid-router'
 
 router.addRoutes([
+  {name: 'lists',        path: '/lists'},
   {name: 'post',         path: '/post/:id'},
   {name: 'posts',        path: '/'}
 ])
 
 // router.register(location => console.log(location.state))
 
-//router.register(location => render(location))
+router.register(location => render(location))
 render(router.getLocation())
 
 function render(location) {
